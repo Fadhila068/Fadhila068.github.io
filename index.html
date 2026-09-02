@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+  <!-- ============================================================
+       META TAGS & SEO
+   ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary Meta Tags -->
+  <title>Muhammad Fadhila Ulinnuha – Data Analyst & Tech Enthusiast</title>
+  <meta name="title" content="Muhammad Fadhila Ulinnuha – Data Analyst & Tech Enthusiast" />
+  <meta name="description"
+    content="Portfolio profesional Muhammad Fadhila Ulinnuha, Data Analyst, Data Visualization Enthusiast & Mahasiswa Teknik Informatika Universitas Ahmad Dahlan. Spesialis Tableau, Python, Business Intelligence, Data Mining, & Web Development." />
+  <meta name="keywords"
+    content="portfolio, data analyst, data visualization, business intelligence, tableau, python, pandas, data mining, fp-growth, uad, yogyakarta, web developer" />
+  <meta name="author" content="Muhammad Fadhila Ulinnuha" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fadhilaulinnuha.dev/" />
+  <meta property="og:title" content="Muhammad Fadhila Ulinnuha – Data Analyst & Tech Enthusiast" />
+  <meta property="og:description"
+    content="Transforming Data into Actionable Insights. Portfolio Data Analyst & Web Developer Muhammad Fadhila Ulinnuha." />
+  <meta property="og:image" content="img/profil.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://fadhilaulinnuha.dev/" />
+  <meta property="twitter:title" content="Muhammad Fadhila Ulinnuha – Data Analyst" />
+  <meta property="twitter:description"
+    content="Transforming Data into Actionable Insights. Portfolio Data Analyst & Web Developer Muhammad Fadhila Ulinnuha." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://fadhilaulinnuha.dev/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
+
+  <!-- ============================================================
+       PRECONNECT & FONTS
+   ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" />
+
+  <!-- AOS – Animate On Scroll -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="loading">
+
+  <!-- ============================================================
+       LOADING SCREEN
+   ============================================================ -->
+  <div id="loading-screen" role="status" aria-label="Loading">
+    <div class="loader">
+      <div class="loader-logo">FU<span>.</span></div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NAVBAR
+   ============================================================ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo" aria-label="Home">Fadhila<span>.</span></a>
+
+      <!-- Navigation Menu -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link" aria-label="Hero">Home</a></li>
+        <li><a href="#about" class="nav-link" aria-label="About">About</a></li>
+        <li><a href="#services" class="nav-link" aria-label="Services">Services</a></li>
+        <li><a href="#skills" class="nav-link" aria-label="Skills">Skills</a></li>
+        <li><a href="#portfolio" class="nav-link" aria-label="Portfolio">Portfolio</a></li>
+        <li><a href="#experience" class="nav-link" aria-label="Experience">Experience</a></li>
+        <li><a href="#certificates" class="nav-link" aria-label="Certificate">Certificate</a></li>
+        <li><a href="#contact" class="nav-link" aria-label="Contact">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Dark/Light Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <i id="theme-icon" class="fas fa-sun"></i>
+        </button>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+   ============================================================ -->
+  <section id="hero" aria-label="Hero section">
+    <!-- Animated Background -->
+    <div class="hero-bg" aria-hidden="true"></div>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <!-- Text Content -->
+      <div class="hero-content">
+        <!-- Greeting Badge -->
+        <div class="hero-greeting">
+          <span class="wave" aria-hidden="true">👋</span>
+          Halo, saya siap berkolaborasi
+        </div>
+
+        <!-- Name -->
+        <h1 class="hero-title">
+          Muhammad Fadhila<br />
+          <span class="gradient-text">Ulinnuha</span>
+        </h1>
+
+        <!-- Typing Subtitle -->
+        <p class="hero-subtitle" aria-live="polite">
+          <span id="typed-text" aria-label="Profesi"></span><span class="cursor" aria-hidden="true"></span>
+        </p>
+
+        <!-- Tagline / Description -->
+        <p class="hero-description" style="font-weight: 600; color: var(--accent-blue-light); margin-bottom: 8px;">
+          "Transforming Data into Actionable Insights."
+        </p>
+        <p class="hero-description">
+          Undergraduate Informatics Student at Ahmad Dahlan University | Aspiring Data Analyst
+          with expertise in Tableau, SQL, Python, Data Visualization, Business Intelligence,
+          Financial Analysis, Data Mining, dan Web Development.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn-primary" id="btn-view-portfolio" aria-label="Lihat Portofolio Fadhila">
+            <i class="fas fa-chart-pie"></i> Lihat Karya
+          </a>
+          <a href="#contact" class="btn-outline" id="btn-contact" aria-label="Hubungi Fadhila">
+            <i class="fas fa-paper-plane"></i> Hubungi Saya
+          </a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="hero-social">
+          <span class="hero-social-label">Temukan saya di:</span>
+          <div class="hero-social-links" role="list">
+            <a href="https://github.com/fadhilaulinnuha" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="GitHub" role="listitem">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-fadhila-ulinnuha-a6a357261" target="_blank"
+              rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" role="listitem">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com/fadhilaulinnuha" target="_blank" rel="noopener noreferrer"
+              class="social-icon" aria-label="Instagram" role="listitem">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/6285174220774" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="WhatsApp" role="listitem">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:fadhiaulinnuha220705@gmail.com" class="social-icon" aria-label="Email" role="listitem">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="hero-image-wrapper">
+        <div class="hero-image-frame" aria-hidden="true">
+          <!-- Profile Photo -->
+          <img src="img/profil.jpg" alt="Foto Profil Muhammad Fadhila Ulinnuha" class="hero-img" loading="eager"
+            width="380" height="420"
+            onerror="this.src='https://ui-avatars.com/api/?name=Muhammad+Fadhila+Ulinnuha&size=380&background=ef4444&color=fff&bold=true&font-size=0.35'" />
+
+          <!-- Floating Badges -->
+          <div class="hero-badge hero-badge-1" aria-label="Data Analytics Focus">
+            <div class="hero-badge-icon"><i class="fas fa-chart-bar" aria-hidden="true"></i></div>
+            <div class="hero-badge-text">
+              <span class="hero-badge-num">Tableau & Python</span>
+              <span class="hero-badge-label">Data Analytics</span>
+            </div>
+          </div>
+
+          <div class="hero-badge hero-badge-2" aria-label="UAD Informatics">
+            <div class="hero-badge-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
+            <div class="hero-badge-text">
+              <span class="hero-badge-num">UAD</span>
+              <span class="hero-badge-label">Informatics Student</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+   ============================================================ -->
+  <section id="about" class="section" aria-label="About me">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Image -->
+        <div class="about-image-container" data-aos="fade-right">
+          <div class="about-img-wrapper">
+            <img src="img/profil.jpg" alt="Muhammad Fadhila Ulinnuha – Data Analyst" class="about-img" loading="lazy"
+              width="500" height="480"
+              onerror="this.src='https://ui-avatars.com/api/?name=Muhammad+Fadhila+Ulinnuha&size=500&background=1e293b&color=ef4444&bold=true&font-size=0.35'" />
+            <div class="about-img-overlay" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="about-content" data-aos="fade-left" data-aos-delay="100">
+          <div class="section-header">
+            <span class="section-badge">
+              <i class="fas fa-user" aria-hidden="true"></i> Tentang Saya
+            </span>
+            <h2 class="section-title">
+              Data Analyst<br /><span>& Business Intelligence Enthusiast</span>
+            </h2>
+          </div>
+
+          <p class="about-description">
+            Saya adalah mahasiswa S1 Teknik Informatika Universitas Ahmad Dahlan yang memiliki ketertarikan mendalam
+            pada bidang Data Analyst, Data Visualization, Business Intelligence, Financial Analysis, dan Web
+            Development.
+            Saya menikmati proses mengolah data menjadi informasi yang bermanfaat melalui visualisasi interaktif,
+            dashboard analitis, serta penerapan data mining untuk mendukung pengambilan keputusan.
+            Saya telah menyelesaikan berbagai sertifikasi profesional termasuk Complete Data Analyst Bootcamp (Udemy),
+            The Complete Financial Analyst Course (Udemy), dan Data Series 19.0 (Dibimbing).
+            Selain itu, saya juga memiliki pengalaman dalam pengembangan aplikasi web menggunakan teknologi modern
+            dan selalu berusaha meningkatkan kemampuan melalui proyek, penelitian, serta sertifikasi.
+          </p>
+
+          <!-- Info Grid -->
+          <div class="about-info-grid">
+            <div class="about-info-item">
+              <span class="about-info-label">Nama Lengkap</span>
+              <span class="about-info-value">Muhammad Fadhila Ulinnuha</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Pendidikan</span>
+              <span class="about-info-value">S1 Teknik Informatika UAD</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Fokus Utama</span>
+              <span class="about-info-value">Data Analytics, BI & Financial Analysis</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Status</span>
+              <span class="about-info-value" style="color: #22c55e;">● Available for Collaboration</span>
+            </div>
+          </div>
+
+          <!-- Tabs -->
+          <div class="about-tabs" role="tablist" aria-label="About sections">
+            <button class="about-tab active" data-tab="education" role="tab" aria-selected="true"
+              aria-controls="tab-education" id="tab-btn-education">Pendidikan</button>
+            <button class="about-tab" data-tab="experience" role="tab" aria-selected="false"
+              aria-controls="tab-experience" id="tab-btn-experience">Pengalaman</button>
+          </div>
+
+          <!-- Tab: Education -->
+          <div class="about-tab-content active" id="tab-education" role="tabpanel" aria-labelledby="tab-btn-education">
+            <div class="about-timeline-item">
+              <div class="about-timeline-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
+              <div class="about-timeline-body">
+                <div class="about-timeline-title">S1 Teknik Informatika</div>
+                <div class="about-timeline-meta">Universitas Ahmad Dahlan · 2023 – Sekarang</div>
+                <div class="about-timeline-desc">Fokus pada Data Analytics, Data Mining, Visualisasi Data, Pengelolaan
+                  Basis Data, dan Pengembangan Aplikasi Web.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab: Experience -->
+          <div class="about-tab-content" id="tab-experience" role="tabpanel" aria-labelledby="tab-btn-experience">
+            <div class="about-timeline-item">
+              <div class="about-timeline-icon"><i class="fas fa-gamepad" aria-hidden="true"></i></div>
+              <div class="about-timeline-body">
+                <div class="about-timeline-title">Player E-Sport Universitas Ahmad Dahlan</div>
+                <div class="about-timeline-meta">Divisi Valorant · UAD E-Sport Community</div>
+                <div class="about-timeline-desc">Mewakili UAD dalam berbagai kejuaraan e-sport, mengasah analytical
+                  thinking, pengambilan keputusan cepat di bawah tekanan, dan kerja sama tim.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES SECTION
+   ============================================================ -->
+  <section id="services" class="section" aria-label="Services" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">
+          <i class="fas fa-concierge-bell" aria-hidden="true"></i> Layanan
+        </span>
+        <h2 class="section-title">Layanan <span>Profesional</span></h2>
+        <p class="section-subtitle">Solusi pemrosesan data, pembuatan dashboard interaktif, dan pengembangan aplikasi
+          web modern.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+          <h3 class="service-title">Data Analysis</h3>
+          <p class="service-desc">Mengolah data mentah menggunakan Python & Pandas untuk melakukan eksplorasi, data
+            cleaning, dan ekstraksi insight bisnis yang bernilai.</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon"><i class="fas fa-tachometer-alt"></i></div>
+          <h3 class="service-title">Dashboard Development</h3>
+          <p class="service-desc">Merancang dashboard analitis yang responsif dan interaktif untuk mempermudah
+            monitoring KPI dan performa operasional.</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon"><i class="fas fa-chart-pie"></i></div>
+          <h3 class="service-title">Data Visualization</h3>
+          <p class="service-desc">Menyajikan data visual yang menarik dan mudah dipahami melalui grafik interaktif
+            Tableau dan Microsoft Excel.</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+          <h3 class="service-title">Business Intelligence</h3>
+          <p class="service-desc">Membangun arsitektur laporan analitis berbasis Business Intelligence untuk mendukung
+            proses pengambilan keputusan strategis.</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-desc">Pengembangan situs dan aplikasi web modern berbasis HTML5, CSS3, JavaScript, PHP,
+            Bootstrap, serta MySQL dengan desain responsif.</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-icon"><i class="fas fa-coins"></i></div>
+          <h3 class="service-title">Financial Analysis</h3>
+          <p class="service-desc">Analisis keuangan komprehensif mencakup financial modeling, forecasting, analisis
+            rasio keuangan, dan capital budgeting untuk mendukung keputusan investasi.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+   ============================================================ -->
+  <section id="skills" class="section" aria-label="Skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">
+          <i class="fas fa-code" aria-hidden="true"></i> Keahlian
+        </span>
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+        <p class="section-subtitle">Kemampuan pemrograman, analisis data, visualisasi, basis data, dan tools pendukung
+          yang saya kuasai.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skills-category" data-aos="fade-right" data-aos-delay="100">
+          <h3 class="skills-category-title">
+            <i class="fas fa-code" aria-hidden="true"></i> Programming Languages
+          </h3>
+
+          <div class="skill-item" role="group" aria-label="Python skill">
+            <div class="skill-info">
+              <div class="skill-name-wrapper">
+                <i class="fab fa-python skill-icon-fa" style="color:#3776ab;" aria-hidden="true"></i>
+                <span class="skill-name">Python</span>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" role="group" aria-label="SQL skill">
+            <div class="skill-info">
+              <div class="skill-name-wrapper">
+                <i class="fas fa-database skill-icon-fa" style="color:#00758f;" aria-hidden="true"></i>
+                <span class="skill-name">SQL</span>
+              </div>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar-fill" data-width="88"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" role="group" aria-label="PHP skill">
+            <div class="skill-info">
+              <div class="skill-name-wrapper">
+                <i class="fab fa-php skill-icon-fa" style="color:#8892be;" aria-hidden="true"></i>
+                <span class="skill-name">PHP</span>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" role="group" aria-label="JavaScript skill">
+            <div class="skill-info">
+              <div class="skill-name-wrapper">
+                <i class="fab fa-js-square skill-icon-fa" style="color:#f7df1e;" aria-hidden="true"></i>
+                <span class="skill-name">JavaScript</span>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Analytics Skills -->
+        <div class="skills-category" data-aos="fade-left" data-aos-delay="100">
+          <h3 class="skills-category-title">
+            <i class="fas fa-chart-line" aria-hidden="true"></i> Data Analytics & BI
+          </h3>
+
+          <div class="skill-item" role="group" aria-label="Tableau skill">
+            <div class="skill-info">
+              <div class="skill-name-wrapper">
+                <i class="fas fa-chart-bar skill-icon-fa" style="color:#e97627;" aria-hidden="true"></i>
+                <span class="skill-name">Tableau</span>
+              </div>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar-fill" data-width="92"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" role="group" aria-label="Microsoft Excel skill">
+            <div class="skill-info">
+              <div class="skill-name-wrapper">
+                <i class="fas fa-file-excel skill-icon-fa" style="color:#107c41;" aria-hidden="true"></i>
+                <span class="skill-name">Microsoft Excel</span>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" role="group" aria-label="Pandas skill">
+            <div class="skill-info">
+              <div class="skill-name-wrapper">
+                <i class="fas fa-table skill-icon-fa" style="color:#150458;" aria-hidden="true"></i>
+                <span class="skill-name">Pandas</span>
+              </div>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar-fill" data-width="88"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" role="group" aria-label="Data Visualization skill">
+            <div class="skill-info">
+              <div class="skill-name-wrapper">
+                <i class="fas fa-pie-chart skill-icon-fa" style="color:#3b82f6;" aria-hidden="true"></i>
+                <span class="skill-name">Data Visualization & BI</span>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" role="group" aria-label="Data Mining skill">
+            <div class="skill-info">
+              <div class="skill-name-wrapper">
+                <i class="fas fa-network-wired skill-icon-fa" style="color:#a855f7;" aria-hidden="true"></i>
+                <span class="skill-name">Data Mining & FP-Growth</span>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" role="group" aria-label="Financial Analysis skill">
+            <div class="skill-info">
+              <div class="skill-name-wrapper">
+                <i class="fas fa-coins skill-icon-fa" style="color:#10b981;" aria-hidden="true"></i>
+                <span class="skill-name">Financial Analysis</span>
+              </div>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-bar-fill" data-width="82"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Web Dev & Database Row -->
+      <div class="skills-grid" style="margin-top: 28px;">
+        <!-- Database & Web Dev -->
+        <div class="skills-category" data-aos="fade-right" data-aos-delay="200">
+          <h3 class="skills-category-title">
+            <i class="fas fa-globe" aria-hidden="true"></i> Web Development & Database
+          </h3>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <div class="skill-name-wrapper">
+                <i class="fas fa-server skill-icon-fa" style="color:#00758f;"></i>
+                <span class="skill-name">MySQL</span>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <div class="skill-name-wrapper">
+                <i class="fab fa-html5 skill-icon-fa" style="color:#e34c26;"></i>
+                <span class="skill-name">HTML5 & CSS3</span>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <div class="skill-name-wrapper">
+                <i class="fab fa-bootstrap skill-icon-fa" style="color:#7952b3;"></i>
+                <span class="skill-name">Bootstrap 5</span>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-category" data-aos="fade-left" data-aos-delay="200">
+          <h3 class="skills-category-title">
+            <i class="fas fa-brain" aria-hidden="true"></i> Soft Skills
+          </h3>
+          <div class="soft-skills-container">
+            <span class="soft-skill-pill"><i class="fas fa-check-circle"></i> Analytical Thinking</span>
+            <span class="soft-skill-pill"><i class="fas fa-check-circle"></i> Problem Solving</span>
+            <span class="soft-skill-pill"><i class="fas fa-check-circle"></i> Critical Thinking</span>
+            <span class="soft-skill-pill"><i class="fas fa-check-circle"></i> Teamwork</span>
+            <span class="soft-skill-pill"><i class="fas fa-check-circle"></i> Communication</span>
+            <span class="soft-skill-pill"><i class="fas fa-check-circle"></i> Time Management</span>
+            <span class="soft-skill-pill"><i class="fas fa-check-circle"></i> Leadership</span>
+            <span class="soft-skill-pill"><i class="fas fa-check-circle"></i> Adaptability</span>
+            <span class="soft-skill-pill"><i class="fas fa-check-circle"></i> Fast Learner</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Stack Icons -->
+      <div class="tech-stack" data-aos="fade-up" data-aos-delay="300">
+        <p class="tech-stack-title">Tools & Environment</p>
+        <div class="tech-icons-grid" role="list" aria-label="Technology icons">
+          <div class="tech-icon-item" role="listitem" aria-label="Tableau"><i class="fas fa-chart-bar"
+              style="color:#e97627;"></i><span>Tableau</span></div>
+          <div class="tech-icon-item" role="listitem" aria-label="Python"><i class="fab fa-python"
+              style="color:#3776ab;"></i><span>Python</span></div>
+          <div class="tech-icon-item" role="listitem" aria-label="Google Colab"><i class="fas fa-code-branch"
+              style="color:#f9ab00;"></i><span>Google Colab</span></div>
+          <div class="tech-icon-item" role="listitem" aria-label="VS Code"><i class="fas fa-code"
+              style="color:#007acc;"></i><span>VS Code</span></div>
+          <div class="tech-icon-item" role="listitem" aria-label="Git"><i class="fab fa-git-alt"
+              style="color:#f05032;"></i><span>Git</span></div>
+          <div class="tech-icon-item" role="listitem" aria-label="GitHub"><i
+              class="fab fa-github"></i><span>GitHub</span></div>
+          <div class="tech-icon-item" role="listitem" aria-label="Laragon"><i class="fas fa-server"
+              style="color:#3b82f6;"></i><span>Laragon</span></div>
+          <div class="tech-icon-item" role="listitem" aria-label="XAMPP"><i class="fas fa-database"
+              style="color:#fb7a24;"></i><span>XAMPP</span></div>
+          <div class="tech-icon-item" role="listitem" aria-label="Figma"><i class="fab fa-figma"
+              style="color:#f24e1e;"></i><span>Figma</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PORTFOLIO SECTION
+   ============================================================ -->
+  <section id="portfolio" class="section" aria-label="Portfolio">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">
+          <i class="fas fa-briefcase" aria-hidden="true"></i> Karya & Proyek
+        </span>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <p class="section-subtitle">Kumpulan proyek Data Analytics, Dashboard BI, Visualisasi Data, Penelitian Mining,
+          dan Web Development.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="portfolio-filter" role="group" aria-label="Portfolio filter">
+        <button class="filter-btn active" data-filter="all" id="filter-all">Semua</button>
+        <button class="filter-btn" data-filter="analytics" id="filter-analytics">Data Analytics</button>
+        <button class="filter-btn" data-filter="web" id="filter-web">Web Dev</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+
+        <!-- Project 1: Data Visualization Adopsi AI -->
+        <article class="portfolio-card" data-category="analytics" data-aos="fade-up" data-aos-delay="0">
+          <div class="portfolio-card-img">
+            <img src="img/analisis adopsi ai python.png" alt="Visualisasi Data Adopsi AI" loading="lazy" width="600"
+              height="220" />
+            <div class="portfolio-card-overlay" aria-hidden="true">
+              <a href="https://github.com/Fadhila068/data-visualization-adopsi-ai" target="_blank"
+                rel="noopener noreferrer" class="overlay-btn overlay-btn-primary">
+                <i class="fab fa-github"></i> View Repo GitHub
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <p class="portfolio-card-category">Data Analytics & Python</p>
+            <h3 class="portfolio-card-title">Visualisasi Data Adopsi AI</h3>
+            <p class="portfolio-card-desc">Analisis dan visualisasi adopsi AI berdasarkan tingkat kepuasan, kepercayaan,
+              persepsi risiko, dan segmentasi demografi pengguna menggunakan Python.</p>
+            <div class="portfolio-card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Data Visualization</span>
+              <span class="tag">AI Adoption</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Student Behavior Dashboard -->
+        <article class="portfolio-card" data-category="analytics" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-card-img">
+            <img src="img/analisis perilaku keseharian siswa.png" alt="Student Behavior Dashboard" loading="lazy"
+              width="600" height="220" />
+            <div class="portfolio-card-overlay" aria-hidden="true">
+              <a href="https://github.com/Fadhila068/student-behavior-dashboard" target="_blank"
+                rel="noopener noreferrer" class="overlay-btn overlay-btn-primary">
+                <i class="fab fa-github"></i> View Repo GitHub
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <p class="portfolio-card-category">Data Analytics & Interactive Dashboard</p>
+            <h3 class="portfolio-card-title">Student Behavior Dashboard</h3>
+            <p class="portfolio-card-desc">Interactive dashboard yang menganalisis hubungan antara perilaku harian
+              mahasiswa, pola belajar, dan performa nilai ujian melalui eksplorasi data visual.</p>
+            <div class="portfolio-card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Dashboard</span>
+              <span class="tag">EDA</span>
+              <span class="tag">Academic Analytics</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Website Resto Pesona Kapau (restouniyanibatikan.com) -->
+        <article class="portfolio-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-card-img">
+            <img src="img/restouniyani.png" alt="Website RM Padang Resto Pesona Kapau" loading="lazy" width="600"
+              height="220" />
+            <div class="portfolio-card-overlay" aria-hidden="true">
+              <a href="https://restouniyanibatikan.com" target="_blank" rel="noopener noreferrer"
+                class="overlay-btn overlay-btn-primary">
+                <i class="fas fa-globe"></i> Kunjungi Website Live
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <p class="portfolio-card-category">Web Development & Frontend</p>
+            <h3 class="portfolio-card-title">RM Padang - Resto Pesona Kapau</h3>
+            <p class="portfolio-card-desc">Pengembangan Frontend website resmi Rumah Makan Padang
+              (restouniyanibatikan.com) dengan fitur katalog menu interaktif, promo spesial, reservasi, dan UI
+              responsif.</p>
+            <div class="portfolio-card-tags">
+              <span class="tag">Frontend</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">UI/UX Design</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE SECTION
+   ============================================================ -->
+  <section id="experience" class="section" aria-label="Work experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">
+          <i class="fas fa-history" aria-hidden="true"></i> Pengalaman
+        </span>
+        <h2 class="section-title">Organisasi & <span>Pengalaman</span></h2>
+        <p class="section-subtitle">Pengalaman kepemimpinan, kerja sama tim, dan analytical thinking dalam kegiatan
+          universitas.</p>
+      </div>
+
+      <div class="experience-timeline" role="list">
+
+        <!-- Experience Entry 1: Dibimbing -->
+        <div class="timeline-item" data-aos="fade-up" role="listitem" style="max-width: 800px; margin: 0 auto;">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-period"><i class="fas fa-rocket" aria-hidden="true"></i> Agustus 2026</div>
+            <h3 class="timeline-role">Peserta Data Series 19.0</h3>
+            <p class="timeline-company"><i class="fas fa-graduation-cap"></i> Dibimbing.id</p>
+
+            <ul
+              style="list-style: disc; margin-left: 20px; color: var(--text-secondary); margin-top: 12px; line-height: 1.7;">
+              <li>Mengikuti program Data Series 19.0 di Dibimbing untuk memperdalam dunia data, khususnya career path
+                Data Analyst.</li>
+              <li>Mendapatkan insight baru mengenai industry best practices, data pipeline, dan tools yang digunakan di
+                dunia profesional.</li>
+              <li>Berpartisipasi aktif dalam diskusi dan sesi mentoring dengan praktisi data berpengalaman.</li>
+              <li>Menerima <strong>Certificate of Appreciation</strong> atas partisipasi dan penyelesaian program.</li>
+            </ul>
+
+            <div class="timeline-tags" style="margin-top: 16px;">
+              <span class="tag">Dibimbing</span>
+              <span class="tag">Data Analyst</span>
+              <span class="tag">Career Path</span>
+              <span class="tag">Industry Insights</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Entry 2: Udemy Bootcamp -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100" role="listitem"
+          style="max-width: 800px; margin: 0 auto;">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-period"><i class="fas fa-certificate" aria-hidden="true"></i> Agustus 2026</div>
+            <h3 class="timeline-role">Complete Data Analyst Bootcamp</h3>
+            <p class="timeline-company"><i class="fas fa-laptop-code"></i> Udemy – Self-Paced Learning</p>
+
+            <ul
+              style="list-style: disc; margin-left: 20px; color: var(--text-secondary); margin-top: 12px; line-height: 1.7;">
+              <li>Menyelesaikan Complete Data Analyst Bootcamp From Basics To Advanced yang mencakup SQL, Python,
+                Tableau, dan data visualization.</li>
+              <li>Mempelajari teknik data cleaning, exploratory data analysis (EDA), dan statistical analysis.</li>
+              <li>Mengerjakan hands-on projects dengan real-world datasets untuk membangun portfolio profesional.</li>
+              <li>Credential ID: <strong>UC-63d3a6df-efbb-40a4-84ba-96e54f032d7a</strong></li>
+            </ul>
+
+            <div class="timeline-tags" style="margin-top: 16px;">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Tableau</span>
+              <span class="tag">Data Analysis</span>
+              <span class="tag">Udemy Certified</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Entry 3: Financial Analyst -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200" role="listitem"
+          style="max-width: 800px; margin: 0 auto;">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-period"><i class="fas fa-chart-line" aria-hidden="true"></i> Agustus 2026</div>
+            <h3 class="timeline-role">The Complete Financial Analyst Course 2026</h3>
+            <p class="timeline-company"><i class="fas fa-laptop-code"></i> Udemy – Self-Paced Learning</p>
+
+            <ul
+              style="list-style: disc; margin-left: 20px; color: var(--text-secondary); margin-top: 12px; line-height: 1.7;">
+              <li>Menyelesaikan kursus Financial Analysis yang mencakup financial modeling, forecasting, dan analisis
+                rasio keuangan.</li>
+              <li>Mempelajari teknik valuasi perusahaan, capital budgeting, dan analisis investasi.</li>
+              <li>Menggunakan Microsoft Excel dan Python untuk membangun model keuangan profesional.</li>
+              <li>Sertifikat tersedia di: <a
+                  href="https://www.udemy.com/certificate/UC-b50fc7ba-4b4e-4d78-a5fc-db621a06b92c/" target="_blank"
+                  rel="noopener noreferrer" style="color: var(--accent-blue);">Lihat Sertifikat</a></li>
+            </ul>
+
+            <div class="timeline-tags" style="margin-top: 16px;">
+              <span class="tag">Financial Analysis</span>
+              <span class="tag">Excel</span>
+              <span class="tag">Financial Modeling</span>
+              <span class="tag">Udemy Certified</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Entry 4: E-Sport -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300" role="listitem"
+          style="max-width: 800px; margin: 0 auto;">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-period"><i class="fas fa-trophy" aria-hidden="true"></i> Player E-Sport UAD</div>
+            <h3 class="timeline-role">Player E-Sport Universitas Ahmad Dahlan</h3>
+            <p class="timeline-company"><i class="fas fa-gamepad"></i> Divisi Valorant</p>
+
+            <ul
+              style="list-style: disc; margin-left: 20px; color: var(--text-secondary); margin-top: 12px; line-height: 1.7;">
+              <li>Mewakili Universitas Ahmad Dahlan sebagai pemain Divisi Valorant dalam berbagai kegiatan dan kompetisi
+                e-sport.</li>
+              <li>Berlatih secara rutin untuk meningkatkan kemampuan individu maupun kerja sama tim.</li>
+              <li>Berkolaborasi dalam menyusun strategi dan komunikasi selama pertandingan.</li>
+              <li>Mengembangkan kemampuan <strong>analytical thinking</strong>, <strong>problem solving</strong>,
+                <strong>teamwork</strong>, komunikasi, dan pengambilan keputusan di bawah tekanan.</li>
+              <li>Menjunjung tinggi sportivitas, disiplin, dan profesionalisme dalam setiap kegiatan.</li>
+            </ul>
+
+            <div class="timeline-tags" style="margin-top: 16px;">
+              <span class="tag">Analytical Thinking</span>
+              <span class="tag">Strategy & Tactics</span>
+              <span class="tag">Teamwork</span>
+              <span class="tag">Problem Solving</span>
+              <span class="tag">Leadership</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICATES SECTION
+   ============================================================ -->
+  <section id="certificates" class="section" aria-label="Certificates">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">
+          <i class="fas fa-award" aria-hidden="true"></i> Sertifikasi
+        </span>
+        <h2 class="section-title">Galeri <span>Sertifikat</span></h2>
+        <p class="section-subtitle">Sertifikat resmi pelatihan dan kegiatan akademik. Klik gambar thumbnail untuk
+          melihat modal preview.</p>
+      </div>
+
+      <div class="certificates-grid">
+
+        <!-- Cert 1: Dibimbing Data Series 19.0 -->
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="0"
+          data-img="assets/certificates/dibimbing_data_series.jpg"
+          data-title="Certificate of Appreciation – Data Series 19.0 (Dibimbing)" role="button" tabindex="0"
+          aria-label="Lihat sertifikat Dibimbing Data Series 19.0">
+          <div class="cert-img-wrapper">
+            <img src="assets/certificates/dibimbing_data_series.jpg" alt="Certificate: Data Series 19.0 – Dibimbing"
+              loading="lazy" width="400" height="180" />
+            <div class="cert-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Dibimbing.id · Event Online</p>
+            <h3 class="cert-name">Certificate of Appreciation – Data Series 19.0</h3>
+            <p class="cert-date"><i class="far fa-calendar-alt"></i> 19–20 Agustus 2026</p>
+            <p class="cert-desc" style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px;">
+              Sertifikat partisipasi aktif dalam program Data Series 19.0 yang diselenggarakan oleh Dibimbing.id (CEO
+              Zaky Muhammad Syah).
+            </p>
+          </div>
+        </div>
+
+        <!-- Cert 2: Udemy Data Analyst Bootcamp -->
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="100"
+          data-img="assets/certificates/udemy_data_analyst.jpg"
+          data-title="Complete Data Analyst Bootcamp From Basics To Advanced – Udemy" role="button" tabindex="0"
+          aria-label="Lihat sertifikat Udemy Data Analyst Bootcamp">
+          <div class="cert-img-wrapper">
+            <img src="assets/certificates/udemy_data_analyst.jpg"
+              alt="Certificate: Complete Data Analyst Bootcamp – Udemy" loading="lazy" width="400" height="180" />
+            <div class="cert-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Udemy · Certified</p>
+            <h3 class="cert-name">Complete Data Analyst Bootcamp From Basics To Advanced</h3>
+            <p class="cert-date"><i class="far fa-calendar-alt"></i> Aug 25, 2026 · <i class="far fa-clock"></i> 89
+              Total Hours</p>
+            <p class="cert-desc" style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px;">
+              Instructors: Krish Naik, Jayant Topnani, KRISHAI Technologies.<br />
+              <strong>No. Sertifikat:</strong> UC-63d3a6df-efbb-40a4-84ba-96e54f032d7a
+            </p>
+          </div>
+        </div>
+
+        <!-- Cert 3: Udemy Financial Analyst -->
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="200"
+          data-img="assets/certificates/udemy_financial_analyst.jpg"
+          data-title="The Complete Financial Analyst Course 2026 – Udemy" role="button" tabindex="0"
+          aria-label="Lihat sertifikat Udemy Financial Analyst">
+          <div class="cert-img-wrapper">
+            <img src="assets/certificates/udemy_financial_analyst.jpg"
+              alt="Certificate: The Complete Financial Analyst Course 2026 – Udemy" loading="lazy" width="400"
+              height="180" />
+            <div class="cert-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Udemy · Certified</p>
+            <h3 class="cert-name">The Complete Financial Analyst Course 2026</h3>
+            <p class="cert-date"><i class="far fa-calendar-alt"></i> Aug 9, 2026 · <i class="far fa-clock"></i> 22.5
+              Total Hours</p>
+            <p class="cert-desc" style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px;">
+              Instructors: 365 Careers.<br />
+              <strong>No. Sertifikat:</strong> UC-b50fc7ba-4b4e-4d78-a5fc-db621a06b92c
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Modal -->
+  <div id="cert-modal" class="cert-modal" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+    <div class="cert-modal-overlay"></div>
+    <div class="cert-modal-content">
+      <div class="cert-modal-header">
+        <h2 class="cert-modal-title" id="cert-modal-title">Certificate Preview</h2>
+        <button class="cert-modal-close" id="cert-modal-close" aria-label="Close certificate modal">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="cert-modal-body">
+        <img id="cert-modal-img" src="" alt="Certificate Modal" loading="lazy" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       CONTACT SECTION
+   ============================================================ -->
+  <section id="contact" class="section" aria-label="Contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">
+          <i class="fas fa-envelope" aria-hidden="true"></i> Kontak
+        </span>
+        <h2 class="section-title">Hubungi <span>Saya</span></h2>
+        <p class="section-subtitle">Tertarik berkolaborasi untuk proyek Data Analytics, Dashboard BI, atau Web
+          Development? Mari berdiskusi!</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div data-aos="fade-right">
+          <h3 class="contact-info-title">Mari Berdiskusi</h3>
+          <p class="contact-info-desc">
+            Saya terbuka untuk peluang magang, proyek riset data, konsultasi Business Intelligence,
+            serta pengembangan aplikasi web. Silakan hubungi saya melalui form atau kontak di bawah ini.
+          </p>
+
+          <div class="contact-methods">
+            <a href="https://wa.me/6285174220774" target="_blank" rel="noopener noreferrer" class="contact-method" id="contact-whatsapp"
+              aria-label="WhatsApp Fadhila">
+              <div class="contact-method-icon" style="background: rgba(37, 211, 102, 0.15); color: #25d366;">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+              </div>
+              <div>
+                <div class="contact-method-label">WhatsApp</div>
+                <div class="contact-method-value">+62 851-7422-0774</div>
+              </div>
+            </a>
+            <a href="mailto:fadhiaulinnuha220705@gmail.com" class="contact-method" id="contact-email"
+              aria-label="Email Fadhila">
+              <div class="contact-method-icon">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div>
+                <div class="contact-method-label">Email</div>
+                <div class="contact-method-value">fadhiaulinnuha220705@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-fadhila-ulinnuha-a6a357261" target="_blank"
+              rel="noopener noreferrer" class="contact-method" id="contact-linkedin" aria-label="LinkedIn Fadhila">
+              <div class="contact-method-icon" style="background: rgba(10, 102, 194, 0.15); color: #0a66c2;">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </div>
+              <div>
+                <div class="contact-method-label">LinkedIn</div>
+                <div class="contact-method-value">linkedin.com/in/muhammad-fadhila-ulinnuha</div>
+              </div>
+            </a>
+            <a href="https://github.com/fadhilaulinnuha" target="_blank" rel="noopener noreferrer"
+              class="contact-method" id="contact-github" aria-label="GitHub Fadhila">
+              <div class="contact-method-icon">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </div>
+              <div>
+                <div class="contact-method-label">GitHub</div>
+                <div class="contact-method-value">github.com/fadhilaulinnuha</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="contact-social" role="list" aria-label="Social media links">
+            <a href="https://github.com/fadhilaulinnuha" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="GitHub" role="listitem">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-fadhila-ulinnuha-a6a357261" target="_blank"
+              rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" role="listitem">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com/fadhilaulinnuha" target="_blank" rel="noopener noreferrer"
+              class="social-icon" aria-label="Instagram" role="listitem">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://wa.me/6285174220774" target="_blank" rel="noopener noreferrer"
+              class="social-icon" aria-label="WhatsApp" role="listitem">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:fadhiaulinnuha220705@gmail.com" class="social-icon" aria-label="Email" role="listitem">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div data-aos="fade-left" data-aos-delay="100">
+          <div class="contact-form-wrapper">
+            <form id="contact-form" novalidate aria-label="Contact form">
+
+              <div class="form-group">
+                <label class="form-label" for="name">Nama Lengkap <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Masukkan nama Anda"
+                  autocomplete="name" required aria-required="true" aria-describedby="name-error" />
+                <div class="form-error" id="name-error" role="alert"></div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">Alamat Email <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Masukkan email Anda"
+                  autocomplete="email" required aria-required="true" aria-describedby="email-error" />
+                <div class="form-error" id="email-error" role="alert"></div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="subject">Subjek Proyek / Pesan</label>
+                <input type="text" id="subject" name="subject" class="form-control"
+                  placeholder="Contoh: Diskusi Proyek Data Analytics" autocomplete="off" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Pesan <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" class="form-control"
+                  placeholder="Ceritakan kebutuhan data analitik atau proyek web Anda..." required aria-required="true"
+                  aria-describedby="message-error"></textarea>
+                <div class="form-error" id="message-error" role="alert"></div>
+              </div>
+
+              <button type="submit" class="btn-primary" id="form-submit" style="width: 100%; justify-content: center;"
+                aria-label="Kirim pesan ke WhatsApp">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i> Kirim ke WhatsApp
+              </button>
+
+              <div class="form-success" id="form-success" role="status" aria-live="polite">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i> Berhasil dialihkan ke WhatsApp! Pesan Anda telah siap dikirimkan.
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+   ============================================================ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">Fadhila<span>.</span></div>
+          <p class="footer-tagline">
+            "Transforming Data into Actionable Insights."<br />
+            Data Analyst & Mahasiswa S1 Teknik Informatika Universitas Ahmad Dahlan.
+          </p>
+          <div class="footer-social" role="list" aria-label="Footer social links">
+            <a href="https://github.com/fadhilaulinnuha" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="GitHub" role="listitem">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-fadhila-ulinnuha-a6a357261" target="_blank"
+              rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" role="listitem">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com/fadhilaulinnuha" target="_blank" rel="noopener noreferrer"
+              class="social-icon" aria-label="Instagram" role="listitem">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://wa.me/6285174220774" target="_blank" rel="noopener noreferrer"
+              class="social-icon" aria-label="WhatsApp" role="listitem">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:fadhiaulinnuha220705@gmail.com" class="social-icon" aria-label="Email" role="listitem">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer-col-title">Navigasi</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="#hero" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#skills" class="footer-link">Skills</a></li>
+            <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+            <li><a href="#certificates" class="footer-link">Certificate</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h3 class="footer-col-title">Layanan</h3>
+          <ul class="footer-links" role="list">
+            <li><span class="footer-link">Data Analysis</span></li>
+            <li><span class="footer-link">Dashboard Development</span></li>
+            <li><span class="footer-link">Data Visualization</span></li>
+            <li><span class="footer-link">Business Intelligence</span></li>
+            <li><span class="footer-link">Financial Analysis</span></li>
+            <li><span class="footer-link">Web Development</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 <a href="#hero">Muhammad Fadhila Ulinnuha</a>. All Rights Reserved.
+        </p>
+        <p class="footer-copyright" style="font-size: 0.75rem;">
+          Designed & Built with Precision & Care
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- ============================================================
+       SCRIPTS
+   ============================================================ -->
+  <!-- AOS Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous"></script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
