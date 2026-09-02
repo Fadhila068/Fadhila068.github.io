@@ -91,19 +91,36 @@ window.addEventListener('scroll', () => {
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navMenu.classList.toggle('open');
-  document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
-});
+function toggleMobileMenu() {
+  const isOpen = navMenu.classList.toggle('open');
+  hamburger.classList.toggle('active', isOpen);
+  hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+}
+
+function closeMobileMenu() {
+  hamburger.classList.remove('active');
+  navMenu.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+
+if (hamburger) {
+  hamburger.addEventListener('click', toggleMobileMenu);
+}
 
 // Close menu on nav link click
 navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('open');
-    document.body.style.overflow = '';
-  });
+  link.addEventListener('click', closeMobileMenu);
+});
+
+// Close menu on click outside on mobile
+document.addEventListener('click', (e) => {
+  if (navMenu && navMenu.classList.contains('open')) {
+    if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+      closeMobileMenu();
+    }
+  }
 });
 
 // ============================================================
@@ -155,12 +172,16 @@ setTimeout(typeEffect, 1000);
 // 6. PARTICLE ANIMATION (CANVAS)
 // ============================================================
 const canvas = document.getElementById('particle-canvas');
-const ctx = canvas.getContext('2d');
+const ctx = canvas ? canvas.getContext('2d') : null;
 
 let particles = [];
-const PARTICLE_COUNT = 60;
+
+function getParticleCount() {
+  return window.innerWidth < 768 ? 24 : 55;
+}
 
 function resizeCanvas() {
+  if (!canvas) return;
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 }
@@ -171,16 +192,18 @@ class Particle {
   }
 
   reset() {
+    if (!canvas) return;
     this.x = Math.random() * canvas.width;
     this.y = Math.random() * canvas.height;
     this.size = Math.random() * 2 + 0.5;
-    this.speedX = (Math.random() - 0.5) * 0.5;
-    this.speedY = (Math.random() - 0.5) * 0.5;
-    this.opacity = Math.random() * 0.5 + 0.1;
-    this.color = Math.random() > 0.5 ? '239, 68, 68' : '167, 139, 250';
+    this.speedX = (Math.random() - 0.5) * 0.4;
+    this.speedY = (Math.random() - 0.5) * 0.4;
+    this.opacity = Math.random() * 0.45 + 0.15;
+    this.color = Math.random() > 0.5 ? '59, 130, 246' : '96, 165, 250';
   }
 
   update() {
+    if (!canvas) return;
     this.x += this.speedX;
     this.y += this.speedY;
 
@@ -189,6 +212,7 @@ class Particle {
   }
 
   draw() {
+    if (!ctx) return;
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
     ctx.fillStyle = `rgba(${this.color}, ${this.opacity})`;
@@ -197,18 +221,20 @@ class Particle {
 }
 
 function drawConnections() {
+  if (!ctx) return;
+  const maxDist = window.innerWidth < 768 ? 85 : 120;
   for (let i = 0; i < particles.length; i++) {
     for (let j = i + 1; j < particles.length; j++) {
       const dx = particles[i].x - particles[j].x;
       const dy = particles[i].y - particles[j].y;
       const dist = Math.sqrt(dx * dx + dy * dy);
 
-      if (dist < 120) {
+      if (dist < maxDist) {
         ctx.beginPath();
         ctx.moveTo(particles[i].x, particles[i].y);
         ctx.lineTo(particles[j].x, particles[j].y);
-        const opacity = (1 - dist / 120) * 0.15;
-        ctx.strokeStyle = `rgba(239, 68, 68, ${opacity})`;
+        const opacity = (1 - dist / maxDist) * 0.15;
+        ctx.strokeStyle = `rgba(59, 130, 246, ${opacity})`;
         ctx.lineWidth = 0.5;
         ctx.stroke();
       }
@@ -218,26 +244,34 @@ function drawConnections() {
 
 function initParticles() {
   particles = [];
-  for (let i = 0; i < PARTICLE_COUNT; i++) {
+  const count = getParticleCount();
+  for (let i = 0; i < count; i++) {
     particles.push(new Particle());
   }
 }
 
 function animateParticles() {
+  if (!canvas || !ctx) return;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   particles.forEach(p => { p.update(); p.draw(); });
   drawConnections();
   requestAnimationFrame(animateParticles);
 }
 
-resizeCanvas();
-initParticles();
-animateParticles();
-
-window.addEventListener('resize', () => {
+if (canvas && ctx) {
   resizeCanvas();
   initParticles();
-});
+  animateParticles();
+
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      resizeCanvas();
+      initParticles();
+    }, 200);
+  });
+}
 
 // ============================================================
 // 7. SKILL BARS ANIMATION
